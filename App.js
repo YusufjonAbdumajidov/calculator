@@ -8,7 +8,7 @@ export default function App() {
   const [ theme, setTheme ] = useState("light");
 
   return (
-    <View style={styles.container}>
+    <View style={theme === "light" ? styles.container : [styles.container, {backgroundColor: "#000"}]}>
       <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
       <Switch
