@@ -1,7 +1,7 @@
 import * as React from "react";
 import Button from "./Button";
 import { View, Text } from "react-native";
-import { Styles } from "../styles/GlobalStyles";
+import { Styles } from "../styles/Styles";
 import { myColors } from "../styles/Colors";
 
 export default function MyKeyboard() {
@@ -92,12 +92,12 @@ export default function MyKeyboard() {
       >
         <Text style={Styles.screenSecondNumber}>
           {secondNumber}
-          <Text style={{ color: "purple", fontSize: 50, fontWeight: '500' }}>{operation}</Text>
+          <Text style={{ color: "red", fontSize: 50, fontWeight: '500' }}>{operation}</Text>
         </Text>
         {firstNumberDisplay()}
       </View>
       <View style={Styles.row}>
-        <Button title="C" isGray onPress={clear} />
+        <Button  title="C" isGray onPress={clear}  />
         <Button title="+/-" isGray onPress={() => handleOperationPress("+/-")} />
         <Button title="％" isGray onPress={() => handleOperationPress("％")} />
         <Button title="÷" isBlue onPress={() => handleOperationPress("/")} />

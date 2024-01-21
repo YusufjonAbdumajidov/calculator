@@ -1,5 +1,5 @@
 import { TouchableOpacity, Text } from "react-native";
-import { Styles } from "../styles/GlobalStyles";
+import { Styles } from "../styles/Styles";
 
 interface ButtonProps {
     onPress: () => void;
@@ -8,7 +8,7 @@ interface ButtonProps {
     isGray?: boolean;
 }
 
-export default function Button({ title, onPress, isBlue, isGray }: ButtonProps) {
+export default function Button({  title, onPress, isBlue, isGray }: ButtonProps) {
     return (
         <TouchableOpacity 
             style={
@@ -31,3 +31,7 @@ export default function Button({ title, onPress, isBlue, isGray }: ButtonProps) 
         </TouchableOpacity>
     );
 }
+
+
+
+
