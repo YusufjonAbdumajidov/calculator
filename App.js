@@ -7,9 +7,9 @@ import MyKeyboard from './src/components/MyKeyboard';
 
 
 export default function App() {
-  const [theme, setTheme] = useState('light');
+  // const [theme, setTheme] = useState('light');
   return (
-    <ThemeContext.Provider value={theme}>
+    // <ThemeContext.Provider value={theme}>
       <SafeAreaView style={ styles.container }>
         {/* <Switch
           value={theme === 'dark'}
@@ -17,7 +17,7 @@ export default function App() {
         /> */}
         <MyKeyboard />
       </SafeAreaView>
-    </ThemeContext.Provider>
+    ///</ThemeContext.Provider> 
   );
 }
 
