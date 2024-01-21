@@ -10,11 +10,11 @@ export default function App() {
   const [theme, setTheme] = useState('light');
   return (
     <ThemeContext.Provider value={theme}>
-      <SafeAreaView style={theme === 'light' ? styles.container : [styles.container, {backgroundColor: 'black'}]}>
-        <Switch
+      <SafeAreaView style={ styles.container }>
+        {/* <Switch
           value={theme === 'dark'}
           onValueChange={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-        />
+        /> */}
         <MyKeyboard />
       </SafeAreaView>
     </ThemeContext.Provider>
@@ -24,7 +24,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: myColors.light,
+    backgroundColor: "black",
     alignItems: 'center',
     justifyContent: 'flex-start',
   },
